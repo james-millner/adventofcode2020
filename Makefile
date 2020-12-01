@@ -1,16 +1,10 @@
-PACKAGE  = go-lang-web-app
+PACKAGE  = advent-of-code-2020
 
 init:
 	go get ./...
 	go get -u github.com/stretchr/testify/assert
 
-clean:
-	go clean
-
-test:
-	go test ./...
-
-build:
-	go build cmd/main/main.go
+dayone:
+	go build cmd/main/1/dayone.go
 
 default: build
