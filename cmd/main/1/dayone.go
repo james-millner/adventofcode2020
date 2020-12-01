@@ -25,14 +25,14 @@ func main() {
 			numberTwo := accounts[a]
 
 			if numberOne+numberTwo == 2020 {
-				accountValueFromTwoNumbers = getTotalAccountValue(numberOne, numberTwo)
+				accountValueFromTwoNumbers = getTotalExpensiveValue(numberOne, numberTwo)
 			}
 
 			for b := 0; b < len(accounts); b++ {
 				numberThree := accounts[b]
 
 				if numberOne+numberTwo+numberThree == 2020 {
-					accountValueFromThreeNumbers = getTotalAccountValue(numberOne, numberTwo, numberThree)
+					accountValueFromThreeNumbers = getTotalExpensiveValue(numberOne, numberTwo, numberThree)
 				}
 			}
 		}
@@ -47,7 +47,7 @@ func main() {
 	}
 }
 
-func getTotalAccountValue(numbers ...int) int {
+func getTotalExpensiveValue(numbers ...int) int {
 	sum := 1
 	for _, num := range numbers {
 		sum = num * sum

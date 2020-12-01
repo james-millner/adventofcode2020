@@ -6,5 +6,6 @@ init:
 
 dayone:
 	go build cmd/main/1/dayone.go
+	dayone
 
 default: build
