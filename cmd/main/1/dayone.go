@@ -4,15 +4,15 @@ import (
 	"fmt"
 	"log"
 	"strconv"
-	"strings"
 
 	"github.com/gobuffalo/packr"
+	"github.com/james-millner/adventofcode2020/pkg/file"
 )
 
 func main() {
 	box := packr.NewBox("./input")
-	accounts := retreiveListOfAccountsFromFile("dayone.txt", box)
-
+	sliceOfAccountsAsString := file.RetreiveInputFileAsListOfString("dayone.txt", box)
+	accounts := convertSliceOfStringToMap(sliceOfAccountsAsString)
 	fmt.Printf("%+v\n", accounts)
 
 	accountValueFromTwoNumbers := 0
@@ -53,16 +53,6 @@ func getTotalExpensiveValue(numbers ...int) int {
 		sum = num * sum
 	}
 	return sum
-}
-
-func retreiveListOfAccountsFromFile(fileName string, box packr.Box) map[int]int {
-	content, err := box.FindString("dayone.txt")
-	if err != nil {
-		log.Fatal(err)
-	}
-
-	lines := strings.Split(string(content), "\n")
-	return convertSliceOfStringToMap(lines)
 }
 
 func convertSliceOfStringToMap(stringArray []string) map[int]int {
