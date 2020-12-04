@@ -14,4 +14,10 @@ daytwo:
 	daytwo
 	rm daytwo
 
+daythree:
+	go build cmd/main/3/daythree.go
+	daythree
+	rm daythree
+
+
 default: build
