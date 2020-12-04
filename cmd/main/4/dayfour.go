@@ -44,10 +44,6 @@ func main() {
 
 	formattedPassports := function.Map(passports, createPassportString)
 
-	// for _, v := range formattedPassports {
-	// 	fmt.Printf("%s\n", extendedPassportVerifier(v))
-	// }
-
 	validPassportsWithBasicValidation := function.Filter(formattedPassports, basicPassportVerifier)
 	fmt.Printf("Valid passports with basic validation: %d\n", len(validPassportsWithBasicValidation))
 
