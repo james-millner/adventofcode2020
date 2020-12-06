@@ -29,5 +29,9 @@ dayfive:
 	dayfive
 	rm dayfive
 
+daysix:
+	go build cmd/main/6/daysix.go
+	daysix
+	rm daysix
 
 default: build

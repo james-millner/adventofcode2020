@@ -26,3 +26,12 @@ func Find(slice []string, val string) bool {
 	}
 	return false
 }
+
+func Contains(s []rune, e rune) bool {
+	for _, a := range s {
+		if a == e {
+			return true
+		}
+	}
+	return false
+}
