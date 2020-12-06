@@ -23,7 +23,11 @@ func main() {
 	//Part two
 	//Find the missing value which will be my seat.
 	mySeat := findMySeat(lowestID, highestSeatID, allSeats)
-	fmt.Printf("My seat ID: %d\n", mySeat)
+	if mySeat != 0 {
+		fmt.Printf("My seat ID: %d\n", mySeat)
+	} else {
+		fmt.Printf("No idea what seat you're on, stow away with the luggage.")
+	}
 }
 
 func findHeighestSeat(seatsList []string) (int, int, map[int]string) {
