@@ -1,4 +1,4 @@
-### Day Three
+### Day Three :christmas_tree: :sparkler:
 To run the example, use the Makefile at the top level of this repo. 
 
 Run `make daythree` to build and run the application.

@@ -1,4 +1,4 @@
-### Day Five
+### Day Five :christmas_tree: :sparkler:
 
 This one was a pain. Spent quite abit of time trying to traverse each character of a seat. After some comments on the advent of code subreddit proposing the seat actually was a binary number itself, that then got me to this solution.
 

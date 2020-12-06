@@ -1,4 +1,4 @@
-### Day Six
+### Day Six :christmas_tree: :sparkler:
 To run the example, use the Makefile at the top level of this repo. 
 
 Run `make daysix` to build and run the application.

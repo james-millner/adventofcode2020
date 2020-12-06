@@ -1,4 +1,4 @@
-### Day Four
+### Day Four :christmas_tree: :sparkler:
 To run the example, use the Makefile at the top level of this repo. 
 
 Run `make dayfour` to build and run the application.
