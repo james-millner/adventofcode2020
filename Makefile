@@ -24,5 +24,10 @@ dayfour:
 	dayfour
 	rm dayfour
 
+dayfive:
+	go build cmd/main/5/dayfive.go
+	dayfive
+	rm dayfive
+
 
 default: build
